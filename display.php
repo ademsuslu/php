@@ -51,7 +51,7 @@ include "connect.php"
                           <a href="update.php" class="text-light text-decoration-none">Edit</a>
                         </button>
                         <button class="btn btn-danger ms-1">
-                         <a href="delete.php" class="text-light text-decoration-none">Delete</a>
+                         <a href="delete.php?deleteid='.$id.'" class="text-light text-decoration-none">Delete</a>
                         </button>
                     </td>
                 </tr>';
