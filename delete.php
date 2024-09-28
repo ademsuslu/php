@@ -8,7 +8,7 @@ if(isset($_GET["deleteid"])){
     $result = mysqli_query($baglan,$sql);
     
     if($result) {
-    echo "Deleted successfully";
+        header("Location:display.php");
     } 
     else {
         die("Deleted unSuccesfuly: ".mysqli_connect_error($baglan));
