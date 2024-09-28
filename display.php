@@ -1,7 +1,5 @@
 <?php
-
-include "connect.php"
-
+    include "connect.php"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +46,7 @@ include "connect.php"
                     <td>'.$password.'</td>
                     <td>
                         <button class="btn btn-success">
-                          <a href="update.php" class="text-light text-decoration-none">Edit</a>
+                          <a href="update.php?updateid='.$id.'" class="text-light text-decoration-none">Edit</a>
                         </button>
                         <button class="btn btn-danger ms-1">
                          <a href="delete.php?deleteid='.$id.'" class="text-light text-decoration-none">Delete</a>
