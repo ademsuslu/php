@@ -47,11 +47,15 @@ include "connect.php"
                     <td>'.$mobile.'</td>
                     <td>'.$password.'</td>
                     <td>
-                     <button class="btn btn-secondary">edit</button>
-                     <button class="btn btn-danger ms-1">Delete</button>
-                     </td>
+                        <button class="btn btn-success">
+                          <a href="update.php" class="text-light text-decoration-none">Edit</a>
+                        </button>
+                        <button class="btn btn-danger ms-1">
+                         <a href="delete.php" class="text-light text-decoration-none">Delete</a>
+                        </button>
+                    </td>
                 </tr>';
-                # code...
+                
               }            
        
 
