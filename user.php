@@ -1,7 +1,6 @@
 <?php
 include "connect.php";
 if(isset($_POST["submit"])){
-
     $name = $_POST["name"];
     $email = $_POST["email"];
     $mobile = $_POST["mobile"];
@@ -13,13 +12,12 @@ if(isset($_POST["submit"])){
     $result = mysqli_query($baglan,$sql);
 
     if($result){
-        echo "Data inserted successfully";
+        header("Location:display.php");
     }
     else{
         die("Veritabanı bağlantısı başarısız: ".mysqli_connect_error($baglan));
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
